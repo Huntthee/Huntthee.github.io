@@ -1,3 +1,11 @@
+/* Brute Force Code, needs some cleaning up.
+TO DO:
+- Fix edges for mobile screens, content cuts off of left.
+- Add more images, Profile picture.
+*/
+
+/* Default Styles */
+
 html {
   font-size: 20px;
 }
@@ -27,6 +35,7 @@ a {
 }
 
  /* For Mobile */
+
 @media screen and (min-width: 25rem) {
   body {
     display: flex;
@@ -123,6 +132,9 @@ a {
   
   */
 
+
+  /* Main Call to Action */
+
   .action-button {
     font-size: 2rem;
     font-weight: bold;
@@ -150,6 +162,8 @@ a {
   }
 }
 
+/* For Tablets and Small Monitors */
+
 @media screen and (min-width: 50rem) {
   nav ul {
     display: flex;
@@ -165,6 +179,8 @@ a {
     max-width: 40ch;
   }
 }
+
+/* For Desktop */
 
 @media screen and (min-width: 80rem) {
   header {
