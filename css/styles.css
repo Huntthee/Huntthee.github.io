@@ -16,6 +16,7 @@ body {
   font-family: 'Source Sans Pro', trebuchet, monospace;
   line-height: 1.4rem;
 }
+
  /* For Mobile */
 @media screen and (min-width: 25rem) {
   body {
@@ -28,13 +29,17 @@ body {
   .logo {
     display: flex;
     background: hsla(0, 0%, 74%, 0.44);
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 1rem;
   }
+
+  /* Header Image */
 
   header img {
     max-width: 10rem;
     border-radius: 1rem 0 0 1rem;
   }
+
+  /* Header Text */
 
   header p {
     font-family: Cabin, palatino, monospace;
@@ -51,13 +56,29 @@ body {
     align-self: center;
   }
 
+  /* Navigation */
+
   nav ul {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
   }
 
   nav ul li {
     list-style: none;
+  }
 
+  nav ul li a {
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+
+    background:hsla(0, 0%, 74%, 0.44);
+    color: white;
+    
+    padding: 1rem;
   }
 
   main {
