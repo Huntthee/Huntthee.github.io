@@ -2,42 +2,62 @@ html {
   font-size: 20px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Cabin, palatino, monospace;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
 body {
   background-image: url(/assets/images/faded-background-mountains.svg);
   margin: 0;
+
+  font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
+  font-family: 'Source Sans Pro', trebuchet, monospace;
+  line-height: 1.4rem;
 }
-
+ /* For Mobile */
 @media screen and (min-width: 25rem) {
-  h1, h2, h3, h4, h5, h6 {
-    font-family: Cabin, palatino, monospace;
-    font-weight: 700;
-    font-variant: small-caps;
-  }
-
   body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
-    font-family: 'Source Sans Pro', trebuchet, monospace;
-    line-height: 1.4rem;
   }
 
   .logo {
     display: flex;
+    background: hsla(0, 0%, 74%, 0.44);
+    border-radius: 0 1rem 1rem 0;
   }
 
   header img {
     max-width: 10rem;
+    border-radius: 1rem 0 0 1rem;
   }
 
   header p {
     font-family: Cabin, palatino, monospace;
     font-weight: 700;
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 3.5rem;
+    font-variant: small-caps;
+    line-height: 3rem;
+    text-shadow: 1px 1px 1px #000;
+
+    color: white;
+
+    margin: 1rem;
+
+    align-self: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    list-style: none;
+
   }
 
   main {
