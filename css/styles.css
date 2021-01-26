@@ -6,6 +6,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Cabin, palatino, monospace;
   font-weight: 700;
   font-variant: small-caps;
+
+  margin: 1rem 1rem 0 1rem;
 }
 
 body {
@@ -14,7 +16,14 @@ body {
 
   font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
   font-family: 'Source Sans Pro', trebuchet, monospace;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
+
+  display: flex;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
 }
 
  /* For Mobile */
@@ -30,6 +39,7 @@ body {
     display: flex;
     background: hsla(0, 0%, 74%, 0.44);
     border-radius: 1rem;
+    margin-top: 1rem;
   }
 
   /* Header Image */
@@ -47,7 +57,7 @@ body {
     font-size: 3.5rem;
     font-variant: small-caps;
     line-height: 3rem;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px black;
 
     color: white;
 
@@ -82,10 +92,105 @@ body {
     padding: 1rem;
   }
 
+  /* Main Content */
+
   main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    background: hsla(360, 100%, 100%, 0.57);
+    box-shadow: 2px 3px 5px 2px gray;
+    border-radius: 1rem;
+  }
+
+  .intro-text {
+    max-width: 90ch;
+    margin: 1rem 1rem;
+  }
+
+  /*  Will add in once Profile picture is set.
+  
+  main div img {
+    border-radius: 50%;
+  }
+  
+  */
+
+  .action-button {
+    font-size: 2rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+
+    background-image: linear-gradient(to right, skyblue,teal, skyblue);
+    color: white;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0 1rem 1rem 0;
+
+    cursor: pointer;
+
+    align-self: flex-end;
+  }
+  
+  a:hover, a:active {
+    box-sizing: border-box;
+    border: 2px solid white;
+
+    font-weight: bold;
+    color: teal;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div h1 {
+    margin: 2rem;
+  }
+
+  .intro-text {
+    line-height: 1.8rem;
+    max-width: 40ch;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  nav ul {
+    margin-left: 2rem;
+  }
+
+  main {
+    align-self: flex-end;
+  }
+
+  .card {
+    margin-right: 15rem;
+  }
+
+  .intro-text {
+    max-width: 30ch;
+    font-size: 1.3rem;
+  }
+  
+  .action-button {
+    margin-top: 1rem;
   }
 }
