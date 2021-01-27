@@ -1,7 +1,6 @@
 /* Brute Force Code, needs some cleaning up.
 TO DO:
 - Create Hamburger Menu for Mobile layout
-- stylize button, move it more central for Desktop Layout
 */
 
 /* Default Styles */
@@ -22,7 +21,7 @@ body {
   background-image: url(/assets/images/mobile-background.jpg);
   background-repeat: no-repeat;
   margin: 0;
-  min-width: 100vw;
+  width: max-content;
   overflow-x: hidden;
 
   font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
@@ -54,15 +53,13 @@ a {
     margin-top: 1rem;
   }
 
-  /* Header Image */
+  /* Header */
 
   header img {
     max-width: 16rem;
 
     border-radius: 1rem;
   }
-
-  /* Header Text */
 
   header p {
     font-family: Cabin, palatino, monospace;
@@ -120,7 +117,7 @@ a {
     display: none;
   }
 
-  .home-card {
+  .card {
     display: flex;
     flex-direction: column;
 
@@ -134,12 +131,43 @@ a {
     margin: 1rem 1rem;
   }
   
-  .home-card img {
+  .home {
     border-radius: 50%;
     max-width: 10rem;
     margin: 1rem;
     float: right;
     shape-outside: circle(50%)
+  }
+
+  /* Styles for Project Gallery */
+
+  .project-gallery {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 30ch;
+    }
+    
+  .project-gallery > * {
+    flex: 1 1 250px;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .project-gallery p {
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: .5rem;
+
+    background: white;
+  }
+
+  .project-gallery a:hover, .project-gallery a:active {
+    border: none;
+  }
+
+  .project-gallery img {
+    max-width: 20ch;
+    margin-top: 1rem;
   }
 
   /* Main Call to Action */
@@ -162,10 +190,13 @@ a {
     align-self: flex-end;
   }
 
+  /* Footer Styles */
+
   footer {
     background: skyblue;
     width: 100vw;
-    margin-top: .5rem;
+    margin: .5rem;
+
   }
 
   footer p {
@@ -174,6 +205,8 @@ a {
     margin-left: 1rem;
   }
   
+  /* states */
+
   a:hover, a:active {
     box-sizing: border-box;
     border: 2px solid white;
@@ -217,8 +250,16 @@ a {
     max-width: 40ch;
   }
 
+  .project-gallery {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+  }
+
   footer {
-    align-self: flex-end;
     font-size: 1.5rem;
   }
 }
@@ -257,10 +298,24 @@ a {
     font-weight: bold;
   }
 
-   .home-card {
+   .card {
     align-self: flex-end;
     margin-right: 12rem;
     margin-bottom: 1rem;
+  }
+
+  /* Fix for cards on Project page */
+  .project-gallery {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-gallery .card {
+    margin: 1rem;
+  }
+
+  .project-gallery .card img {
+    max-width: 22rem;
   }
 
   .intro-text {
@@ -279,7 +334,6 @@ a {
   }
   .action-button:active {
     border: .4rem solid white;
-
   }
 }
 
