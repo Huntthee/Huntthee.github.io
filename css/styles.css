@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background-image: url(/assets/images/faded-background-mountains.svg);
   margin: 0;
+  min-width: 100vw;
 
   font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
   font-family: 'Source Sans Pro', trebuchet, monospace;
@@ -54,8 +55,9 @@ a {
   /* Header Image */
 
   header img {
-    max-width: 10rem;
-    border-radius: 1rem 0 0 1rem;
+    max-width: 16rem;
+
+    border-radius: 1rem;
   }
 
   /* Header Text */
@@ -73,6 +75,8 @@ a {
     margin: 1rem;
 
     align-self: center;
+
+    display: none;
   }
 
   /* Navigation */
@@ -120,7 +124,7 @@ a {
   }
 
   .intro-text {
-    max-width: 90ch;
+    max-width: 25ch;
     margin: 1rem 1rem;
   }
 
@@ -160,11 +164,24 @@ a {
     font-weight: bold;
     color: teal;
   }
+
+  footer a:hover {
+    border: none;
+  }
 }
 
 /* For Tablets and Small Monitors */
 
 @media screen and (min-width: 50rem) {
+  .logo img {
+    max-width: 13rem;
+    border-radius: 1rem 0 0 1rem;
+  }
+  
+  .hidden {
+    display: block;
+  }
+
   nav ul {
     display: flex;
     flex-direction: row;
@@ -178,15 +195,25 @@ a {
     line-height: 1.8rem;
     max-width: 40ch;
   }
+
+  footer {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
 }
 
 /* For Desktop */
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 90rem) {
   header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+  }
+
+  .logo img {
+    max-width: 10rem;
   }
 
   nav ul {
@@ -198,7 +225,7 @@ a {
   }
 
   .card {
-    margin-right: 15rem;
+    margin-right: 12rem;
   }
 
   .intro-text {
