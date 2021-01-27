@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-image: url(/assets/images/faded-background-mountains.svg);
+  background-image: url(/assets/images/mobile-background.jpg);
   margin: 0;
   min-width: 100vw;
 
@@ -156,6 +156,11 @@ a {
 
     align-self: flex-end;
   }
+
+  footer p {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
   
   a:hover, a:active {
     box-sizing: border-box;
@@ -173,6 +178,10 @@ a {
 /* For Tablets and Small Monitors */
 
 @media screen and (min-width: 50rem) {
+  body {
+    background-image: url(/assets/images/faded-background-mountains.jpg);
+  }
+
   .logo img {
     max-width: 13rem;
     border-radius: 1rem 0 0 1rem;
