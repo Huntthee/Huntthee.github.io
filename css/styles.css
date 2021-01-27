@@ -127,14 +127,14 @@ a {
     max-width: 25ch;
     margin: 1rem 1rem;
   }
-
-  /*  Will add in once Profile picture is set.
   
-  main div img {
+  .card img {
     border-radius: 50%;
+    max-width: 10rem;
+    margin: 1rem;
+    float: right;
+    shape-outside: circle(50%)
   }
-  
-  */
 
 
   /* Main Call to Action */
