@@ -20,8 +20,10 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-image: url(/assets/images/mobile-background.jpg);
+  background-repeat: no-repeat;
   margin: 0;
   min-width: 100vw;
+  overflow-x: hidden;
 
   font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
   font-family: 'Source Sans Pro', trebuchet, monospace;
@@ -157,9 +159,16 @@ a {
     align-self: flex-end;
   }
 
+  footer {
+    background: skyblue;
+    width: 100vw;
+    margin-top: .5rem;
+  }
+
   footer p {
     color: white;
     text-shadow: 2px 2px 2px black;
+    margin-left: 1rem;
   }
   
   a:hover, a:active {
