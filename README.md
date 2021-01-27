@@ -7,5 +7,6 @@
 Throughout my time spent attending the SAIT courses I will apply the knowledge I gain to this website and expand its functionality, usability and accessbility.
 
 **Sources**
-- Images from [Canva](https://www.canva.com)
+- Background Images from [Canva](https://www.canva.com)
+- Logo made by Mike Allison on [Canva](https://www.canva.com)
 - [MIT License](https://opensource.org/licenses/MIT)

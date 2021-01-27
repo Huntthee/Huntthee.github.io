@@ -1,6 +1,7 @@
 /* Brute Force Code, needs some cleaning up.
 TO DO:
 - Create Hamburger Menu for Mobile layout
+- stylize button, move it more central for Desktop Layout
 */
 
 /* Default Styles */
@@ -253,4 +254,8 @@ a {
   .action-button {
     margin-top: 1rem;
   }
+}
+
+*::before, ::after {
+  box-sizing: border-box;
 }
