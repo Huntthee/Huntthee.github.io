@@ -4,6 +4,13 @@ TO DO:
 */
 
 /* Default Styles */
+:root {
+  --dark: #094f47;
+  --medium: ;
+  --light: ;
+  --w: ;
+  --transparent: ;
+}
 
 html {
   font-size: 20px;
@@ -50,7 +57,7 @@ a {
 
   .logo {
     display: flex;
-    background: hsla(0, 0%, 74%, 0.44);
+    background: var(--dark);
     border-radius: 1rem;
     margin-top: 1rem;
   }
@@ -100,12 +107,14 @@ a {
     text-align: center;
     text-decoration: none;
 
-    background:hsla(0, 0%, 74%, 0.44);
+    background:var(--dark);
     color: white;
     
     padding: 1rem;
   }
 
+
+    
   /* Main Content */
 
   main {
@@ -195,14 +204,17 @@ a {
   /* Footer Styles */
 
   footer {
-    background: skyblue;
+    background: var(--dark);
     min-width: 100vw;
   }
 
   footer p {
     color: white;
-    text-shadow: 2px 2px 2px black;
     margin-left: 1rem;
+  }
+
+  footer a {
+    color: white;
   }
   
   /* states */
@@ -239,6 +251,14 @@ a {
   nav ul {
     display: flex;
     flex-direction: row;
+  }
+  
+  .left-end a {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .right-end a {
+    border-radius: 0 1rem 1rem 0;
   }
 
   div h1 {
@@ -291,8 +311,8 @@ a {
 
     margin: 2rem 0 0 -50rem;
 
-    color: white;
-    text-shadow: 2px 2px 2px gray;
+    color: var(--dark);
+    text-shadow: 3px 4px 2px white;
 
     font-size: 4rem;
     font-weight: bold;
@@ -335,13 +355,10 @@ a {
     min-width: 20rem;
   }
   
-  .action-button:hover {
+  .action-button:hover, .action-button:active  {
     text-shadow: 1px 2px 2px black;
-  }
-  .action-button:active {
     border: .4rem solid white;
   }
-}
 
 *::before, ::after {
   box-sizing: border-box;
