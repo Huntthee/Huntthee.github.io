@@ -21,7 +21,9 @@ body {
   background-image: url(/assets/images/mobile-background.jpg);
   background-repeat: no-repeat;
   margin: 0;
-  width: max-content;
+  min-width: 100vw;
+  min-height: 100vh;
+
   overflow-x: hidden;
 
   font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
@@ -194,9 +196,7 @@ a {
 
   footer {
     background: skyblue;
-    width: 100vw;
-    margin: .5rem;
-
+    min-width: 100vw;
   }
 
   footer p {
@@ -308,6 +308,10 @@ a {
   .project-gallery {
     display: flex;
     flex-direction: row;
+
+    margin: 5.59rem 0;
+
+    font-size: 1rem;
   }
 
   .project-gallery .card {
@@ -317,6 +321,8 @@ a {
   .project-gallery .card img {
     max-width: 22rem;
   }
+
+  /* End fix */
 
   .intro-text {
     max-width: 30ch;
