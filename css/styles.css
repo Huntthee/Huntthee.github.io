@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-image: url(/assets/images/mobile-background.jpg);
-  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   min-width: 100vw;
   min-height: 100vh;
@@ -113,8 +113,6 @@ a {
     padding: 1rem;
   }
 
-
-    
   /* Main Content */
 
   main {
@@ -122,6 +120,10 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .project-heading {
+    display: none;
   }
 
   .desktop-text {
@@ -135,6 +137,7 @@ a {
     background: hsla(360, 100%, 100%, 0.57);
     box-shadow: 2px 3px 5px 2px gray;
     border-radius: 1rem;
+    margin-bottom: 1rem;
   }
 
   .intro-text {
@@ -152,9 +155,18 @@ a {
 
   /* Styles for Project Gallery */
 
+  .project-heading {
+    color: var(--dark);
+
+    font-size: 5rem;
+    text-shadow: 3px 4px 2px white;
+
+    margin: 3rem 0 -1rem 0;
+  }
+
   .project-gallery {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     max-width: 30ch;
     }
     
@@ -237,6 +249,7 @@ a {
 @media screen and (min-width: 50rem) {
   body {
     background-image: url(/assets/images/faded-background-mountains.jpg);
+    background-size: cover;
   }
 
   .logo img {
@@ -321,7 +334,11 @@ a {
    .card {
     align-self: flex-end;
     margin-right: 12rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .project-heading {
+    display: block;
   }
 
   /* Fix for cards on Project page */
