@@ -1,6 +1,7 @@
-/* Brute Force Code, needs some cleaning up.
+/* Brute Force Code, needs some more cleaning up.
 TO DO:
-- Create Hamburger Menu for Mobile layout
+- Create Hamburger Menu for Mobile layout. CSS or Javascript? hmm
+- Create Resume Page and ensure printablility.
 */
 
 /* Default Styles */
@@ -28,8 +29,6 @@ body {
   background-image: url(/assets/images/mobile-background.jpg);
   background-size: cover;
   margin: 0;
-  min-width: 100vw;
-  min-height: 100vh;
 
   overflow-x: hidden;
 
@@ -117,13 +116,9 @@ a {
 
   main {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-  }
-
-  .project-heading {
-    display: none;
+    align-items: baseline;
   }
 
   .desktop-text {
@@ -156,22 +151,24 @@ a {
   /* Styles for Project Gallery */
 
   .project-heading {
+    display: none;
+
     color: var(--dark);
 
     font-size: 5rem;
+    text-align: center;
     text-shadow: 3px 4px 2px white;
 
-    margin: 3rem 0 -1rem 0;
+    margin: 3rem 0;
+    width: 90vw;
   }
 
   .project-gallery {
-    display: flex;
-    flex-direction: column;
-    max-width: 30ch;
+    max-width: 25ch;
+    margin: 1rem 1rem;
     }
     
   .project-gallery > * {
-    flex: 1 1 250px;
     margin-top: 1rem;
     text-align: center;
   }
@@ -217,7 +214,7 @@ a {
 
   footer {
     background: var(--dark);
-    min-width: 100vw;
+    min-width: 99vw;
   }
 
   footer p {
@@ -283,15 +280,6 @@ a {
     max-width: 40ch;
   }
 
-  .project-gallery {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    gap: 1rem;
-
-    margin-bottom: 2rem;
-  }
-
   footer {
     font-size: 1.5rem;
   }
@@ -314,8 +302,8 @@ a {
     margin-left: 2rem;
   }
 
-  main {
-    align-self: stretch;
+  .profile {
+    margin-right: -50rem;
   }
 
   .desktop-text {
@@ -331,32 +319,8 @@ a {
     font-weight: bold;
   }
 
-   .card {
-    align-self: flex-end;
-    margin-right: 12rem;
-    margin-bottom: 3rem;
-  }
-
   .project-heading {
     display: block;
-  }
-
-  /* Fix for cards on Project page */
-  .project-gallery {
-    display: flex;
-    flex-direction: row;
-
-    margin: 5.59rem 0;
-
-    font-size: 1rem;
-  }
-
-  .project-gallery .card {
-    margin: 1rem;
-  }
-
-  .project-gallery .card img {
-    max-width: 22rem;
   }
 
   /* End fix */
