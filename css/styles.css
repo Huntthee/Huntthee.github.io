@@ -30,7 +30,6 @@ body {
 
   .logo {
     display: flex;
-    background: var(--dark);
     border-radius: 1rem;
     margin-top: 1rem;
   }
@@ -57,6 +56,7 @@ body {
     font-size: 3rem;
     margin-left: .5rem;
     color: var(--w);
+    transition: font-size .2s ease-out 50ms;
   }
 
   .fa-facebook:hover, .fa-facebook:active {
@@ -77,6 +77,10 @@ body {
 
   nav a:hover, nav a:active {
     border: none;
+  }
+
+  .fab:hover, .fab:active {
+    font-size: 4rem;
   }
 
   input {
@@ -200,6 +204,19 @@ body {
     cursor: pointer;
 
     align-self: flex-end;
+
+    animation: skew .5s 4;
+    transform: skew(0deg);
+    animation-direction: alternate;
+  }
+
+  @keyframes skew {
+    0% {
+      transform: skew(5deg, 5deg);
+    }
+    100% {
+      transform: skew(-5deg, -5deg);
+    }
   }
 
   /* Footer Styles */
@@ -244,6 +261,10 @@ body {
   .logo img {
     max-width: 13rem;
     border-radius: 1rem 0 0 1rem;
+  }
+
+  .logo {
+    background: var(--dark);
   }
   
   .hidden {
