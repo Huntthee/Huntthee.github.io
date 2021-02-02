@@ -1,6 +1,5 @@
-/* Brute Force Code, needs some more cleaning up.
+/* Brute Force Code, needs a lot of cleaning up.
 TO DO:
-- Create Hamburger Menu for Mobile layout. CSS or Javascript? hmm
 - Create Resume Page and ensure printablility.
 - Transfer colors into root
 */
@@ -89,8 +88,59 @@ a {
   }
 
   /* Navigation */
+  .fa-bars {
+    color: var(--dark);
+    font-size: 3rem;
+    margin: 1rem 0 1rem -1rem;
+  }
 
-  nav ul {
+  .fa-bars:hover, .fa-bars:active {
+    color: white;
+  }
+
+  .fab {
+    font-size: 3rem;
+    margin-left: .5rem;
+    color: white;
+  }
+
+  .fa-facebook:hover, .fa-facebook:active {
+    color: #1877f2;
+  }
+
+  .fa-twitter-square:hover, .fa-twitter-square:active {
+    color: #00acee;
+  }
+
+  .fa-linkedin:hover, .fa-linkedin:active {
+    color: #0e76a8;
+  }
+
+  .fa-github:hover, .fa-github:active {
+    color: rebeccapurple;
+  }
+
+  nav a:hover, nav a:active {
+    border: none;
+  }
+
+  input {
+    position: absolute;
+    left: -100vw;
+  }
+
+  .socials {
+    position: aboslute;
+    margin-top: -4rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
+  .hide-nav {
+    display: none;
+  }
+
+  .hide-nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,11 +150,11 @@ a {
     font-family: 'Source Sans Pro', trebuchet, monospace;
   }
 
-  nav ul li {
+  .hide-nav ul li {
     list-style: none;
   }
 
-  nav ul li a {
+  .hide-nav ul li a {
     display: block;
 
     text-align: center;
@@ -114,6 +164,14 @@ a {
     color: white;
     
     padding: 1rem;
+  }
+
+  .hide-nav a:hover, .hide-nav a:active {
+    border: 2px solid white;
+  }
+
+  #toggle:checked ~ .hide-nav {
+    display: block;
   }
 
   /* Main Content */
@@ -263,7 +321,23 @@ a {
     display: block;
   }
 
-  nav ul {
+  label {
+    display: none;
+  }
+
+  .socials {
+    margin: 1rem 0 0 5rem;
+  }
+
+  .fab {
+    margin: 0 2rem;
+  }
+
+  .hide-nav {
+    display: block;
+  }
+
+  .hide-nav ul {
     display: flex;
     flex-direction: row;
   }
@@ -303,7 +377,11 @@ a {
     max-width: 10rem;
   }
 
-  nav ul {
+  .socials {
+    margin-bottom: -1rem;
+  }
+
+  .hide-nav ul {
     margin-left: 2rem;
   }
 

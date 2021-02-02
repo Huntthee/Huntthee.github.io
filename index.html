@@ -1,7 +1,6 @@
 <!--
 TO DO:
-- Find a nicer font pairing.
-- create pages for Projects, Resume and Contact
+- create pages for Resume and Contact
 -->
 
 <!DOCTYPE html>
@@ -26,15 +25,31 @@ TO DO:
     </div>
 
     <nav>
-      <!-- Eventual Social Media Icons/Links
-      <div class="socials"></div>
-      -->
-      <ul>
-        <li class="left-end"><a href="#">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li class="right-end"><a href="#">Contact</a></li>
-      </ul>
+
+      <!-- Hamburger Menu Icon -->
+
+      <label for="toggle"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="toggle">
+
+      <!-- Social Media Icons -->
+        <div class="socials">
+          <a href="https://www.facebook.com/mikko.allison"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/TheRealHuntthee"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com/in/michael-allison-32a092204/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Huntthee"><i class="fab fa-github"></i></a>
+        </div>
+
+
+      <!-- Navigation Menu -->
+
+      <div class="hide-nav">
+        <ul>
+          <li class="left-end"><a href="#">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+          <li class="right-end"><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
