@@ -23,7 +23,10 @@ I may come back and tweak the overall color scheme and images, as most have been
 
 Right now the code is still brute force, but ready for some cleanup!
 
+Solution for homepage animation found [here](https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load) on Stackoverflow. Answer provided by Chris Spittles.
+
 **Sources**
 - Background Images from [Canva](https://www.canva.com)
 - Logo made by Mike Allison on [Canva](https://www.canva.com)
 - [MIT License](https://opensource.org/licenses/MIT)
+- Problems Solved by [Stackoverflow](https://stackoverflow.com)

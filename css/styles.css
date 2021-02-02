@@ -2,6 +2,7 @@
 TO DO:
 - Create Hamburger Menu for Mobile layout. CSS or Javascript? hmm
 - Create Resume Page and ensure printablility.
+- Transfer colors into root
 */
 
 /* Default Styles */
@@ -23,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
 
   margin: 1rem 1rem 0 1rem;
+  line-height: 2.5rem;
 }
 
 body {
@@ -33,7 +35,7 @@ body {
   overflow-x: hidden;
 
   font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
-  font-family: 'Source Sans Pro', trebuchet, monospace;
+  font-family: 'Lora', trebuchet, monospace;
   line-height: 1.5rem;
 
   display: flex;
@@ -94,6 +96,8 @@ a {
     justify-content: center;
     align-items: stretch;
     margin-left: -2rem;
+
+    font-family: 'Source Sans Pro', trebuchet, monospace;
   }
 
   nav ul li {
@@ -128,6 +132,7 @@ a {
   .card {
     display: flex;
     flex-direction: column;
+    min-height: 30rem;
 
     background: hsla(360, 100%, 100%, 0.57);
     box-shadow: 2px 3px 5px 2px gray;
@@ -214,7 +219,7 @@ a {
 
   footer {
     background: var(--dark);
-    min-width: 99vw;
+    min-width: 100%;
   }
 
   footer p {
@@ -228,7 +233,7 @@ a {
   
   /* states */
 
-  a:hover, a:active {
+  a:hover, a:active, button:hover, button:active {
     box-sizing: border-box;
     border: 2px solid white;
 
@@ -304,9 +309,21 @@ a {
 
   .profile {
     margin-right: -50rem;
+    margin-bottom: 1.4rem;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 
   .desktop-text {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
     display: block;
     position: absolute;
 
@@ -314,6 +331,7 @@ a {
 
     color: var(--dark);
     text-shadow: 3px 4px 2px white;
+    font-family: 'Source Sans Pro', trebuchet, monospace;
 
     font-size: 4rem;
     font-weight: bold;
@@ -321,6 +339,11 @@ a {
 
   .project-heading {
     display: block;
+  }
+
+  .project-gallery {
+    line-height: 2rem;
+    font-size: 1.5rem;
   }
 
   /* End fix */
