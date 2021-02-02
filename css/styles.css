@@ -318,8 +318,8 @@ body {
     max-width: 10rem;
   }
 
-  .socials {
-    margin-bottom: -1rem;
+  .hide-nav {
+    position: absolute;
   }
 
   .hide-nav ul {
