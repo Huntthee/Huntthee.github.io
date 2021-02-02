@@ -7,23 +7,7 @@ TO DO:
 /* Default Styles */
 :root {
   --dark: #094f47;
-  --medium: ;
-  --light: ;
-  --w: ;
-  --transparent: ;
-}
-
-html {
-  font-size: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Cabin, palatino, monospace;
-  font-weight: 700;
-  font-variant: small-caps;
-
-  margin: 1rem 1rem 0 1rem;
-  line-height: 2.5rem;
+  --w: #fff;
 }
 
 body {
@@ -31,18 +15,7 @@ body {
   background-size: cover;
   margin: 0;
 
-  overflow-x: hidden;
-
-  font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
-  font-family: 'Lora', trebuchet, monospace;
-  line-height: 1.5rem;
-
   display: flex;
-}
-
-a {
-  color: teal;
-  text-decoration: none;
 }
 
  /* For Mobile */
@@ -66,25 +39,7 @@ a {
 
   header img {
     max-width: 16rem;
-
     border-radius: 1rem;
-  }
-
-  header p {
-    font-family: Cabin, palatino, monospace;
-    font-weight: 700;
-    font-size: 3.5rem;
-    font-variant: small-caps;
-    line-height: 3rem;
-    text-shadow: 1px 1px 1px black;
-
-    color: white;
-
-    margin: 1rem;
-
-    align-self: center;
-
-    display: none;
   }
 
   /* Navigation */
@@ -95,13 +50,13 @@ a {
   }
 
   .fa-bars:hover, .fa-bars:active {
-    color: white;
+    color: var(--w);
   }
 
   .fab {
     font-size: 3rem;
     margin-left: .5rem;
-    color: white;
+    color: var(--w);
   }
 
   .fa-facebook:hover, .fa-facebook:active {
@@ -161,13 +116,13 @@ a {
     text-decoration: none;
 
     background:var(--dark);
-    color: white;
+    color: var(--w);
     
     padding: 1rem;
   }
 
   .hide-nav a:hover, .hide-nav a:active {
-    border: 2px solid white;
+    border: 2px solid var(--w);
   }
 
   #toggle:checked ~ .hide-nav {
@@ -197,11 +152,6 @@ a {
     border-radius: 1rem;
     margin-bottom: 1rem;
   }
-
-  .intro-text {
-    max-width: 25ch;
-    margin: 1rem 1rem;
-  }
   
   .home {
     border-radius: 50%;
@@ -213,19 +163,6 @@ a {
 
   /* Styles for Project Gallery */
 
-  .project-heading {
-    display: none;
-
-    color: var(--dark);
-
-    font-size: 5rem;
-    text-align: center;
-    text-shadow: 3px 4px 2px white;
-
-    margin: 3rem 0;
-    width: 90vw;
-  }
-
   .project-gallery {
     max-width: 25ch;
     margin: 1rem 1rem;
@@ -234,14 +171,6 @@ a {
   .project-gallery > * {
     margin-top: 1rem;
     text-align: center;
-  }
-
-  .project-gallery p {
-    margin: 1rem;
-    border-radius: 1rem;
-    padding: .5rem;
-
-    background: white;
   }
 
   .project-gallery a:hover, .project-gallery a:active {
@@ -262,7 +191,7 @@ a {
     text-align: center;
 
     background-image: linear-gradient(to right, skyblue,teal, skyblue);
-    color: white;
+    color: var(--w);
 
     padding: 1rem;
     border-radius: 1rem;
@@ -281,19 +210,19 @@ a {
   }
 
   footer p {
-    color: white;
+    color: var(--w);
     margin-left: 1rem;
   }
 
   footer a {
-    color: white;
+    color: var(--w);
   }
   
   /* states */
 
   a:hover, a:active, button:hover, button:active {
     box-sizing: border-box;
-    border: 2px solid white;
+    border: 2px solid var(--w);
 
     font-weight: bold;
     color: teal;
@@ -353,15 +282,6 @@ a {
   div h1 {
     margin: 2rem;
   }
-
-  .intro-text {
-    line-height: 1.8rem;
-    max-width: 40ch;
-  }
-
-  footer {
-    font-size: 1.5rem;
-  }
 }
 
 /* For Desktop */
@@ -390,46 +310,11 @@ a {
     margin-bottom: 1.4rem;
   }
 
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .desktop-text {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-
-    display: block;
-    position: absolute;
-
-    margin: 2rem 0 0 -50rem;
-
-    color: var(--dark);
-    text-shadow: 3px 4px 2px white;
-    font-family: 'Source Sans Pro', trebuchet, monospace;
-
-    font-size: 4rem;
-    font-weight: bold;
-  }
-
   .project-heading {
     display: block;
   }
 
-  .project-gallery {
-    line-height: 2rem;
-    font-size: 1.5rem;
-  }
-
   /* End fix */
-
-  .intro-text {
-    max-width: 30ch;
-    font-size: 1.3rem;
-  }
   
   .action-button {
     position: absolute;
@@ -439,7 +324,7 @@ a {
   
   .action-button:hover, .action-button:active  {
     text-shadow: 1px 2px 2px black;
-    border: .4rem solid white;
+    border: .4rem solid var(--w);
   }
 
 *::before, ::after {
