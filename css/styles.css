@@ -204,19 +204,6 @@ body {
     cursor: pointer;
 
     align-self: flex-end;
-
-    animation: skew .5s 4;
-    transform: skew(0deg);
-    animation-direction: alternate;
-  }
-
-  @keyframes skew {
-    0% {
-      transform: skew(5deg, 5deg);
-    }
-    100% {
-      transform: skew(-5deg, -5deg);
-    }
   }
 
   /* Footer Styles */
