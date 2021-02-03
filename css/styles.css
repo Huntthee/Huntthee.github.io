@@ -195,6 +195,7 @@ body {
 
   .project-gallery a:hover, .project-gallery a:active {
     border: none;
+    transform: scale(.9);
   }
 
   .project-gallery img {
