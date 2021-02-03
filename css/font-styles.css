@@ -7,10 +7,9 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: Cabin, palatino, monospace;
   font-weight: 700;
-  font-variant: small-caps;
 
   margin: 1rem 1rem 0 1rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
 }
 
 body {
@@ -47,9 +46,13 @@ a {
     display: none;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
   .intro-text {
     max-width: 25ch;
-    margin: 1rem 1rem;
+    margin: 0rem 1rem 1rem 1rem;
   }
 
   /* Projects Page */

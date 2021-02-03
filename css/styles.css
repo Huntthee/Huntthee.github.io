@@ -20,7 +20,7 @@ body {
 
  /* For Mobile */
 
-@media screen and (min-width: 25rem) {
+
   body {
     display: flex;
     flex-direction: column;
@@ -41,7 +41,10 @@ body {
     border-radius: 1rem;
   }
 
-  /* Navigation */
+  /* A hefty Navigation section. Includes social media links and styles 
+  
+  Starting with the Hamburger menu Icon, checkbox hack used.*/
+
   .fa-bars {
     color: var(--dark);
     font-size: 3rem;
@@ -51,6 +54,10 @@ body {
   .fa-bars:hover, .fa-bars:active {
     color: var(--w);
   }
+
+  /* Social Media Icon styles
+    Need to figure out how to make sure the scaling up of the icons doesn't cause the jank it currently does. Create enough space around them and perhaps position: absolute and place them again.
+  */
 
   .fab {
     font-size: 3rem;
@@ -75,18 +82,18 @@ body {
     color: rebeccapurple;
   }
 
-  nav a:hover, nav a:active {
-    border: none;
-  }
-
   .fab:hover, .fab:active {
     font-size: 4rem;
   }
+
+  /* Hiding the checkbox off screen */
 
   input {
     position: absolute;
     left: -100vw;
   }
+
+  /* Moving the Icons into position for Mobile */
 
   .socials {
     position: aboslute;
@@ -94,6 +101,8 @@ body {
     margin-bottom: 1rem;
     margin-left: 2rem;
   }
+
+  /* Hiding and styling the navigation menu for Mobile */
 
   .hide-nav {
     display: none;
@@ -126,8 +135,11 @@ body {
   }
 
   .hide-nav a:hover, .hide-nav a:active {
-    border: 2px solid var(--w);
+    background: var(--w);
+    color: var(--dark);
   }
+
+  /* Checkbox hamburger menu hack, shows/hides navigation when 'toggled' */
 
   #toggle:checked ~ .hide-nav {
     display: block;
@@ -146,6 +158,8 @@ body {
     display: none;
   }
 
+  /* General Card styles for whole site, Stay consistent! */
+
   .card {
     display: flex;
     flex-direction: column;
@@ -154,10 +168,12 @@ body {
     background: hsla(360, 100%, 100%, 0.57);
     box-shadow: 2px 3px 5px 2px gray;
     border-radius: 1rem;
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem 1rem;
   }
   
-  .home {
+  /* Styles for my Profile Picture */
+
+  .profile-pic {
     border-radius: 50%;
     max-width: 10rem;
     margin: 1rem;
@@ -165,7 +181,7 @@ body {
     shape-outside: circle(50%)
   }
 
-  /* Styles for Project Gallery */
+  /* Styles for the Project Gallery page */
 
   .project-gallery {
     max-width: 25ch;
@@ -186,7 +202,9 @@ body {
     margin-top: 1rem;
   }
 
-  /* Main Call to Action */
+  /* Main Call to Action 
+     Button pops out of paragraph on larger screens to become the Call to Action under some visual hierarchy text.
+  */
 
   .action-button {
     font-size: 2rem;
@@ -206,7 +224,7 @@ body {
     align-self: flex-end;
   }
 
-  /* Footer Styles */
+  /* Some simple Footer Styles */
 
   footer {
     background: var(--dark);
@@ -222,12 +240,9 @@ body {
     color: var(--w);
   }
   
-  /* states */
+  /* some overall pseudo states for links */
 
   a:hover, a:active, button:hover, button:active {
-    box-sizing: border-box;
-    border: 2px solid var(--w);
-
     font-weight: bold;
     color: teal;
   }
@@ -235,15 +250,17 @@ body {
   footer a:hover {
     border: none;
   }
-}
 
-/* For Tablets and Small Monitors */
+
+/* Styles For Tablets and Small Monitors */
 
 @media screen and (min-width: 50rem) {
   body {
     background-image: url(/assets/images/faded-background-mountains.jpg);
     background-size: cover;
   }
+
+  /* Fix up for the logo. Displays logo font and changes from all round corners on logo, to flat cut between logo and text, and round right-corners on text background. */
 
   .logo img {
     max-width: 13rem;
@@ -254,13 +271,19 @@ body {
     background: var(--dark);
   }
   
+  /* Show that text! */
+
   .hidden {
     display: block;
   }
 
+  /* And hide that hamburger icon, don't need it anymore! */
+
   label {
     display: none;
   }
+
+  /* Spcae out the social icons a little nicer. */
 
   .socials {
     margin: 1rem 0 0 5rem;
@@ -270,15 +293,21 @@ body {
     margin: 0 2rem;
   }
 
+  /* Reveal the navigation again */
+
   .hide-nav {
     display: block;
   }
+
+  /* And stick it in a row*/
 
   .hide-nav ul {
     display: flex;
     flex-direction: row;
   }
   
+  /* Tried to use Pseudo elements for first, first-child, first-of-type etc, but only the class seems to make the rounded corners appear only on the first and last items. Otherwise the pseudo's seem to select all of the anchors/list items */
+
   .left-end a {
     border-radius: 1rem 0 0 1rem;
   }
@@ -286,6 +315,8 @@ body {
   .right-end a {
     border-radius: 0 1rem 1rem 0;
   }
+
+  /* a little bump for the h1*/
 
   div h1 {
     margin: 2rem;
@@ -332,7 +363,7 @@ body {
   
   .action-button:hover, .action-button:active  {
     text-shadow: 1px 2px 2px black;
-    border: .4rem solid var(--w);
+    background: var(--w);
   }
 
 *::before, ::after {
