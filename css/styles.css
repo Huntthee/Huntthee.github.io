@@ -211,7 +211,8 @@ body {
 
   .project-gallery a:hover, .project-gallery a:active {
     border: none;
-    transform: scale(.9);
+    font-weight: normal;
+    background: var(--dark);
   }
 
   .project-gallery img {
@@ -260,7 +261,6 @@ body {
   /* some overall pseudo states for links */
 
   a:hover, a:active, button:hover, button:active {
-    font-weight: bold;
     color: teal;
   }
 
