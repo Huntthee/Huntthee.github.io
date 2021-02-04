@@ -57,17 +57,33 @@ body {
 
   /* Social Media Icon styles
     Need to figure out how to make sure the scaling up of the icons doesn't cause the jank it currently does. Create enough space around them and perhaps position: absolute and place them again.
+
+    SOLVED!! Had a dang typo.. Also 
   */
 
   .fab {
+    position: absolute;
     font-size: 3rem;
     margin-left: .5rem;
     color: var(--w);
     transition: font-size .2s ease-out 50ms;
   }
 
+  .fa-twitter-square {
+    left: 4rem;
+  }
+
+  .fa-linkedin {
+    left: 8rem;
+  }
+
+  .fa-github {
+    left: 12rem;
+  }
+
   .fa-facebook:hover, .fa-facebook:active {
     color: #1877f2;
+
   }
 
   .fa-twitter-square:hover, .fa-twitter-square:active {
@@ -96,7 +112,7 @@ body {
   /* Moving the Icons into position for Mobile */
 
   .socials {
-    position: aboslute;
+    position: absolute;
     margin-top: -4rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
@@ -284,20 +300,34 @@ body {
     display: none;
   }
 
-  /* Spcae out the social icons a little nicer. */
+  /* Spcae out and position the social icons a little nicer. */
 
   .socials {
     margin: 1rem 0 0 5rem;
+    top: 14rem;
   }
 
   .fab {
     margin: 0 2rem;
   }
 
+  .fa-twitter-square {
+    left: 7rem;
+  }
+
+  .fa-linkedin {
+    left: 14rem;
+  }
+
+  .fa-github {
+    left: 21rem;
+  }
+
   /* Reveal the navigation again */
 
   .hide-nav {
     display: block;
+    margin-top: 5rem;
   }
 
   /* And stick it in a row*/
@@ -337,8 +367,14 @@ body {
     max-width: 10rem;
   }
 
+  /* Fix social icons position for fullscreen */
+
+  .socials {
+    top: 0;
+  }
+
   .hide-nav {
-    position: absolute;
+    margin-top: 5rem;
   }
 
   .hide-nav ul {
