@@ -58,7 +58,7 @@ body {
   /* Social Media Icon styles
     Need to figure out how to make sure the scaling up of the icons doesn't cause the jank it currently does. Create enough space around them and perhaps position: absolute and place them again.
 
-    SOLVED!! Had a dang typo.. Also 
+    SOLVED!! Had a dang typo.. Have everything sitting nicely now :)
   */
 
   .fab {
