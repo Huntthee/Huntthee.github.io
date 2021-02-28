@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+
+p {
+  max-width: 90ch;
+}
+
+.name {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: .5rem;
+}
