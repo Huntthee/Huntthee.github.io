@@ -1,32 +1,31 @@
-# Mountain Peak Digital Designs README
+# My Personal Portfolio Website
+## Owned and maintained by Mike Allison
+**&copy; 2021**
 
-**Owned and maintained by Mike Allison**
+---
 
-Check out my Github!
-- [Github](https://github.com/Huntthee)
-- [The Repo](https://huntthee.github.io/index.html)
+### Intents
+This website has been created and maintained by Mike Allison for the purpose of displaying all the information one would need to learn about me, what I can do, and how to reach me for more information if needed.
 
-This website is hosted on Github Pages
-- [The Website](https://huntthee.github.io/index.html)
+I will be building this website as a final project piece for my time at SAIT, and aim to continue to use and develop the site as my web development career continues.
 
-## This website is intended to be used as my portfolio website and final project for the SAIT Web Dev course.
+---
 
-Throughout my time spent attending the SAIT courses I will apply the knowledge I gain to this website and expand its functionality, usability and accessbility.
+### Roadmap
 
-Currently the site is built on flexbox, but I have plans to integrate some Grid, or perhaps migrate entirely to grid, with some flexbox. Time will tell!
+The roadmap for the site is as follows, and I have no particular order for when changes will be implemented or rolled out. If I get some new ideas, they may be coded in first!
 
-NO JavaScript... yet. I may use some for the eventual Hamburger menu.
-(Ended up doing the checkbox hack instead! works well enough)
+- Some Icons to spruce up the landing page
+- Better colors
+- Actual photo of me for background image
+- Build Resume section
+- Build Portfolio section
+- Create and link Contact form
+- Some kind of Call to Action for the landing page.
+- Mobile friendliness/Hamburger menu for smaller screens
 
-Have a good looking, responsive page to use as a base for any future changes. Coming along nicely so far! Need to add Resume page and make sure it's printable.
+---
 
-I may come back and tweak the overall color scheme and images, as most have been created/found in Canva in ~5mins and are meant to be placeholders for the finished product.
-
-Right now the code is still brute force, some cleanup has been done but theres always more that can be done!
-
-**Sources**
-- Background Images from [Canva](https://www.canva.com)
-- Logo made by Mike Allison on [Canva](https://www.canva.com)
-- [MIT License](https://opensource.org/licenses/MIT)
-- Problems Solved by [Stackoverflow](https://stackoverflow.com)
-- Plenty of solutions found on [css-tricks](https://css-tricks.com/)
+**Attributions**
+- Current background image from [Lorem Picsum](https://picsum.photos/) 
+- photo credit - [Matthew Henry](https://unsplash.com/@matthewhenry)
