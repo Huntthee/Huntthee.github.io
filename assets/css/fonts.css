@@ -16,6 +16,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Mukta', sans-serif;
+  text-transform: uppercase;
 }
 
 p {
@@ -44,6 +45,9 @@ a {
 
 #home h1 {
   color: var(--mustard);
-  text-transform: uppercase;
   font-size: 3rem;
+}
+
+#home h2 {
+  text-transform: capitalize;
 }
