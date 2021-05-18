@@ -1,0 +1,62 @@
+/* Color Palette */
+:root {
+  --mustard: #ffde59;
+  --eerie: #1f1f1f;
+  --davy: #5f5f5f;
+  --white: #ffffff;
+}
+
+/* Set some overall rules */
+body {
+  margin: 0;
+  background-color: var(--eerie);
+}
+
+img {
+  max-width: 10rem;
+  border-radius: 50%;
+  background-color: var(--mustard);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Make the header navigation pretty */
+#header {
+  display: flex;
+
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+
+  background-color: var(--mustard);
+}
+
+#header-nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: -1rem;
+}
+
+#header-nav ul li {
+  margin: 0 1rem 0 1rem;
+}
+
+/* Style the Home Page */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100vh;
+  background-color: var(--davy);
+}
+
+#home h2 {
+  background-color: var(--mustard);
+  padding-top: 1.5rem;
+  margin-top: -1.5rem;
+  height: 4rem;
+}
