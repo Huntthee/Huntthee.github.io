@@ -19,6 +19,15 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+h2 {
+  width: 100%;
+  height: 4rem;
+
+  padding-top: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
 p {
   padding: 0 1rem 0 1rem;
   
@@ -27,17 +36,11 @@ p {
 
 a {
   text-decoration: none;
-}
-
-
-/* Header Decorations */
-
-#header-nav a {
   font-weight: bold;
   color: var(--eerie);
 }
 
-#header-nav a:hover {
+a:hover {
   color: var(--davy);
 }
 
@@ -50,4 +53,42 @@ a {
 
 #home h2 {
   text-transform: capitalize;
+  background-color: var(--mustard);
+}
+
+/* Projects styles */
+
+#projects h2 {
+  background-color: var(--mustard);
+}
+
+/* Card styles */
+
+.card p {
+  margin-bottom: 5rem;
+}
+
+/* About styles */
+
+#about h2 {
+  background-color: var(--white);
+}
+
+/* Skills styles */
+
+#skills h2 {
+  background-color: var(--eerie);
+  color: var(--mustard);
+}
+
+/* Contact styles */
+
+#contact h2 {
+  background-color: var(--white);
+}
+
+/* And finally the bit at the bottom */
+
+#footer p {
+  color: var(--white);
 }
