@@ -131,6 +131,6 @@ ul {
 
 @media only screen and (min-width: 600px) {
   #home {
-    background-image: URL('/assets/images/tech-back.jpg');
+    background-image: URL('../images/tech-back.jpg');
   }
 }
