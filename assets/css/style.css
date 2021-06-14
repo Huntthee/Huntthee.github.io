@@ -37,6 +37,10 @@ ul {
   z-index: 1;
 }
 
+#header-nav {
+  margin-left: -1.2rem;
+}
+
 #header-nav ul {
   display: flex;
   flex-direction: row;
