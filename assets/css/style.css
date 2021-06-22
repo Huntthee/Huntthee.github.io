@@ -13,7 +13,6 @@ body {
 }
 
 img {
-  max-width: 10rem;
   border-radius: 50%;
   background-color: var(--mustard);
   position: relative;
