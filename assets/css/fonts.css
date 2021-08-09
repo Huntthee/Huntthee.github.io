@@ -68,6 +68,10 @@ a:hover {
   margin-bottom: 5rem;
 }
 
+.card h3 {
+  padding: 0 10px 0 10px;
+}
+
 /* About styles */
 
 #about h2 {
