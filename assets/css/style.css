@@ -144,11 +144,10 @@ ul {
   #home {
     background-image: URL('../images/tech-back.jpg');
   }
-
+  
   #header-nav ul li {
     border-right: 2px solid transparent;
   }
-  
   #header-nav ul li a {
     padding: .5rem;
   }
