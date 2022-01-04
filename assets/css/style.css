@@ -168,4 +168,8 @@ ul {
   #header-nav ul li:hover {
     border-right: 2px solid var(--eerie); 
   }
+
+  .card {
+    margin: 8rem 1rem;
+  }
 }
