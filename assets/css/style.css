@@ -120,7 +120,7 @@ ul {
   margin-left: -2rem;
 }
 
-#about ul li {
+#about ul a {
   margin: 1rem;
   background-color: var(--white);
   padding: 1rem;
