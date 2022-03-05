@@ -97,6 +97,25 @@ ul {
   
 }
 
+.visit-btn {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 25px;
+  background-color: var(--mustard);
+  border-radius: 5px;
+}
+
+.visit-btn:hover{
+  cursor: pointer;
+  
+}
+
+.visit-btn:active {
+  border: solid 1px var(--eerie);
+  border-bottom: none;
+  border-right: none;
+}
+
 /* Stylings for the About section */
 
 #about {
