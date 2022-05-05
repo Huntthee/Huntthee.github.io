@@ -26,15 +26,17 @@ ul {
 
 /* Make the header navigation pretty */
 #header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  position: -webkit-sticky;
+
   position: sticky;
   top: 0;
+
   width: 100%;
+
   background-color: var(--mustard);
+
   border-bottom: 1px solid var(--davy);
+
   z-index: 1;
 }
 
@@ -43,53 +45,40 @@ ul {
 }
 
 #header-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-left: -1rem;
 }
+
+
 
 #header-nav ul li a {
   padding: 1rem .2rem 1rem 1rem;
 }
 
+
+
 /* Style the Home Page */
 #home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+
   height: 100vh;
   background-color: var(--davy);
 }
 
 /* Styles for Projects Section */
+
 #projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Card Styles for all! */
+
 .card {
   background-color: var(--white);
   margin: 3rem;
@@ -98,14 +87,14 @@ ul {
 .other-projects-list {
   max-width: 60%;
   margin: 10% auto;
-  -webkit-box-shadow: -1px -4px 3px, 1px -4px 3px;
-          box-shadow: -1px -4px 3px, 1px -4px 3px;
+  box-shadow: -1px -4px 3px, 1px -4px 3px;
 }
 
 .other-projects-list li {
   margin-left: -15%;
   padding: 20px 0 20px 0;
   list-style-type: square;
+  
 }
 
 .visit-btn {
@@ -116,8 +105,9 @@ ul {
   border-radius: 5px;
 }
 
-.visit-btn:hover {
+.visit-btn:hover{
   cursor: pointer;
+  
 }
 
 .visit-btn:active {
@@ -127,20 +117,12 @@ ul {
 }
 
 /* Stylings for the About section */
+
 #about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--mustard);
 }
 
@@ -149,18 +131,11 @@ ul {
 }
 
 #about ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
   margin-left: -2rem;
 }
 
@@ -172,26 +147,19 @@ ul {
 }
 
 /* Make the Skills Section pretty!*/
+
 #skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--davy);
 }
 
 /* Make the contact section visible and good lookin */
+
 #contact {
   background-color: var(--mustard);
   padding-bottom: 2rem;
@@ -203,21 +171,24 @@ ul {
 }
 
 /* Now for some media queries */
+
 @media only screen and (min-width: 600px) {
   #home {
-    background-image: URL("../images/tech-back.jpg");
+    background-image: URL('../images/tech-back.jpg');
   }
+  
   #header-nav ul li {
     border-right: 2px solid transparent;
   }
   #header-nav ul li a {
     padding: .5rem;
   }
+
   #header-nav ul li:hover {
-    border-right: 2px solid var(--eerie);
+    border-right: 2px solid var(--eerie); 
   }
+
   .card {
     margin: 8rem 1rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
