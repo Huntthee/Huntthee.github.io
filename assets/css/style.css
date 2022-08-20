@@ -1,7 +1,7 @@
 /* Color Palette */
 :root {
   --mustard: #003459;
-  --hover: #01487a;
+  --hover: #0071c2;
   --eerie: #1f1f1f;
   --davy: #5f5f5f;
   --white: #ffffff;
@@ -11,6 +11,22 @@
 body {
   margin: 0;
   background-color: var(--eerie);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: var(--eerie);
+}
+
+h1, h2, h3, button {
+  font-family: 'Mukta', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  width: 100%;
+  height: 4rem;
+  padding-top: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 4rem;
 }
 
 img {
@@ -22,6 +38,21 @@ img {
 
 ul {
   list-style: none;
+}
+
+p {
+  padding: 0 1rem 0 1rem;
+  max-width: 60ch;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--eerie);
+}
+
+ahover {
+  color: var(--davy);
 }
 
 /* Make the header navigation pretty */
@@ -55,6 +86,11 @@ ul {
 
 #header-nav ul li a {
   padding: 1rem .2rem 1rem 1rem;
+  color: var(--white);
+}
+
+#header-nav ul li a:hover {
+  color: var(--davy);
 }
 
 /* Style the Home Page */
@@ -73,6 +109,16 @@ ul {
   background-color: var(--davy);
 }
 
+#home h1 {
+  color: var(--mustard);
+  font-size: 5rem;
+}
+
+#home h2 {
+  text-transform: capitalize;
+  background-color: var(--white);
+}
+
 /* Styles for Projects Section */
 #projects {
   display: -webkit-box;
@@ -89,10 +135,27 @@ ul {
           justify-content: center;
 }
 
+#projects h2 {
+  background-color: var(--mustard);
+  color: var(--white);
+}
+
 /* Card Styles for all! */
 .card {
   background-color: var(--white);
   margin: 3rem;
+}
+
+.card p {
+  margin-bottom: 5rem;
+}
+
+.card h3 {
+  padding: 0 10px 0 10px;
+}
+
+.card h3:hover {
+  color: var(--davy);
 }
 
 .other-projects-list {
@@ -114,9 +177,11 @@ ul {
   margin-bottom: 25px;
   background-color: var(--mustard);
   border-radius: 5px;
+  color: var(--white);
 }
 
 .visit-btn:hover {
+  background-color: var(--hover);
   cursor: pointer;
 }
 
@@ -142,6 +207,19 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--mustard);
+}
+
+#about p {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+#about h2 {
+  background-color: var(--white);
+}
+
+#about h3 {
+  color: var(--white);
 }
 
 #about img {
@@ -191,6 +269,11 @@ ul {
   background-color: var(--davy);
 }
 
+#skills h2 {
+  background-color: var(--eerie);
+  color: var(--white);
+}
+
 /* Make the contact section visible and good lookin */
 #contact {
   background-color: var(--mustard);
@@ -200,6 +283,26 @@ ul {
 #contact ul {
   margin-top: -2rem;
   margin-left: -2rem;
+}
+
+#contact ul li {
+  color: var(--white);
+}
+
+#contact ul li a {
+  color: var(--white);
+}
+
+#contact ul li a:hover {
+  color: var(--davy);
+}
+
+#contact h2 {
+  background-color: var(--white);
+}
+
+#footer p {
+  color: var(--white);
 }
 
 /* Now for some media queries */

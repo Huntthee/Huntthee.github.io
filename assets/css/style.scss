@@ -1,7 +1,7 @@
 /* Color Palette */
 :root {
   --mustard: #003459;
-  --hover: #01487a;
+  --hover: #0071c2;
   --eerie: #1f1f1f;
   --davy: #5f5f5f;
   --white: #ffffff;
@@ -11,6 +11,25 @@
 body {
   margin: 0;
   background-color: var(--eerie);
+
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: var(--eerie);
+}
+
+h1, h2, h3, button {
+  font-family: 'Mukta', sans-serif;
+  text-transform: uppercase;
+}
+
+
+h2 {
+  width: 100%;
+  height: 4rem;
+
+  padding-top: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 4rem;
 }
 
 img {
@@ -22,6 +41,21 @@ img {
 
 ul {
   list-style: none;
+}
+
+p {
+  padding: 0 1rem 0 1rem;
+  
+  max-width: 60ch;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--eerie);
+    &hover {
+    color: var(--davy);
+  }
 }
 
 /* Make the header navigation pretty */
@@ -54,6 +88,13 @@ ul {
 
 #header-nav ul li a {
   padding: 1rem .2rem 1rem 1rem;
+
+  color: var(--white);
+
+  &:hover {
+    color: var(--davy);
+  }
+    
 }
 
 
@@ -66,6 +107,16 @@ ul {
 
   height: 100vh;
   background-color: var(--davy);
+
+  h1 {
+    color: var(--mustard);
+    font-size: 5rem;
+  };
+  
+  h2 {
+    text-transform: capitalize;
+    background-color: var(--white);
+  }
 }
 
 /* Styles for Projects Section */
@@ -75,6 +126,12 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
+  h2 {
+    background-color: var(--mustard);
+
+    color: var(--white)
+  }
 }
 
 /* Card Styles for all! */
@@ -82,6 +139,18 @@ ul {
 .card {
   background-color: var(--white);
   margin: 3rem;
+
+  p {
+    margin-bottom: 5rem;
+  }
+
+  h3 {
+    padding: 0 10px 0 10px;
+
+    &:hover {
+      color: var(--davy);
+    }
+  }
 }
 
 .other-projects-list {
@@ -103,17 +172,19 @@ ul {
   margin-bottom: 25px;
   background-color: var(--mustard);
   border-radius: 5px;
-}
 
-.visit-btn:hover{
-  cursor: pointer;
-  
-}
+  color: var(--white);
 
-.visit-btn:active {
-  border: solid 1px var(--eerie);
-  border-bottom: none;
-  border-right: none;
+  &:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+  }
+
+  &:active {
+    border: solid 1px var(--eerie);
+    border-bottom: none;
+    border-right: none;
+  }
 }
 
 /* Stylings for the About section */
@@ -124,26 +195,39 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: var(--mustard);
-}
 
-#about img {
-  margin-top: 5rem;
-}
+  p {
+    color: var(--white);
+    font-size: 1.2rem;
+  }
 
-#about ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-  margin-left: -2rem;
-}
+  h2 {
+    background-color: var(--white);
+  };
 
-#about ul a {
-  margin: 1rem;
-  background-color: var(--white);
-  padding: 1rem;
-  border-radius: 10px;
+  h3 {
+    color: var(--white)
+  }
+
+  img {
+    margin-top: 5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin-left: -2rem;
+
+    a {
+      margin: 1rem;
+      background-color: var(--white);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+  }
 }
 
 /* Make the Skills Section pretty!*/
@@ -156,6 +240,11 @@ ul {
   align-items: center;
 
   background-color: var(--davy);
+
+  h2 {
+    background-color: var(--eerie);
+    color: var(--white);
+  }
 }
 
 /* Make the contact section visible and good lookin */
@@ -163,11 +252,31 @@ ul {
 #contact {
   background-color: var(--mustard);
   padding-bottom: 2rem;
+
+  ul {
+    margin-top: -2rem;
+    margin-left: -2rem;
+
+    li {
+      color: var(--white);
+
+      a {
+        color: var(--white);
+
+        &:hover {
+          color: var(--davy);
+        }
+      }
+    };
+  }
+  
+  h2 {
+    background-color: var(--white);
+  }
 }
 
-#contact ul {
-  margin-top: -2rem;
-  margin-left: -2rem;
+#footer p {
+  color: var(--white);
 }
 
 /* Now for some media queries */
