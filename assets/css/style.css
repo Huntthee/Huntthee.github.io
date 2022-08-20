@@ -171,6 +171,10 @@ ahover {
   list-style-type: square;
 }
 
+.other-projects-list li a:hover {
+  color: var(--davy);
+}
+
 .visit-btn {
   display: inline-block;
   padding: 10px 20px 10px 20px;
