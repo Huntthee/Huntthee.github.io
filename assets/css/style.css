@@ -112,6 +112,7 @@ ahover {
 #home h1 {
   color: var(--mustard);
   font-size: 5rem;
+  background: var(--white);
 }
 
 #home h2 {
@@ -253,6 +254,11 @@ ahover {
   border-radius: 10px;
 }
 
+#about ul a:hover {
+  background-color: var(--eerie);
+  color: var(--white);
+}
+
 /* Make the Skills Section pretty!*/
 #skills {
   display: -webkit-box;
@@ -276,6 +282,10 @@ ahover {
 #skills h2 {
   background-color: var(--eerie);
   color: var(--white);
+}
+
+#skills .card h3:hover {
+  color: var(--eerie);
 }
 
 /* Make the contact section visible and good lookin */
@@ -312,7 +322,7 @@ ahover {
 /* Now for some media queries */
 @media only screen and (min-width: 600px) {
   #home {
-    background-image: URL("../images/tech-back.jpg");
+    background-image: URL("../images/Hunt-profile-background.webp");
   }
   #header-nav ul li {
     border-right: 2px solid transparent;

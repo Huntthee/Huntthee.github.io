@@ -111,6 +111,7 @@ a {
   h1 {
     color: var(--mustard);
     font-size: 5rem;
+    background: var(--white);
   };
   
   h2 {
@@ -231,6 +232,11 @@ a {
       background-color: var(--white);
       padding: 1rem;
       border-radius: 10px;
+
+      &:hover {
+        background-color: var(--eerie);
+        color: var(--white);
+      }
     }
   }
 }
@@ -249,6 +255,12 @@ a {
   h2 {
     background-color: var(--eerie);
     color: var(--white);
+  }
+
+  .card h3 {
+    &:hover {
+      color: var(--eerie);
+    }
   }
 }
 
@@ -288,7 +300,7 @@ a {
 
 @media only screen and (min-width: 600px) {
   #home {
-    background-image: URL('../images/tech-back.jpg');
+    background-image: URL('../images/Hunt-profile-background.webp');
   }
   
   #header-nav ul li {
